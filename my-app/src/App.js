@@ -1,72 +1,66 @@
 import React, { Component } from 'react';
 import './App.css';
-import UserOutput from './UserOutput/Output';
-import UserInput from './UserInput/UserInput'
+import Person from  './Person/Person'
 class App extends Component {
 
-    state = {
-        country: [
-            {road: '1 Maja', city: 'Wolbrom'}
-        ],
-        showElement: [
-            {show: false, text: 'Show'}
-        ]
-    };
+	state= {
+		persons: [
+			{id:'112sd', name: 'Kamil', age:'12'},
+			{id:'2ada', name: 'Wojtek', age:'18'},
+			{id:'213dwq', name: 'Kamila', age:'32'},
+		],
+		showPerson: false
+	};
+	nameChangeHandler = (event, id) => {
+		const personIndex = this.state.persons.findIndex(p => {
+			return p.id === id;
+		});
+		console.log(id);
+		const person = {
+			...this.state.persons[personIndex]
+		};
+		person.name = event.target.value;
 
-    switchRoadHandle = (event) => {
-        this.setState({
-            country: [
-                {road: event.target.value, city: this.state.country[0].city}
-            ]
-        })
-    };
+		const persons = [...this.state.persons];
+		persons[personIndex] = person;
+		this.setState( {persons: persons} );
+	};
 
-    switchCityHandle = (event) => {
-        this.setState({
-            country: [
-                {road: this.state.country[0].road, city: event.target.value}
-            ]
-        })
-    };
+	togglePersonHandler = () => {
+		this.setState({
+			showPerson: !this.state.showPerson
+		});
+	};
 
-    resetCountry = () => {
-        this.setState({
-            country: [
-                {road: '1 Maja', city: 'Wolbrom'}
-            ]
-        });
-    };
+	deletePersonHandler = (indexPerson) => {
+		const persons = [...this.state.persons];
+		persons.splice(indexPerson, 1);
 
-    toogleCityHandler = () => {
-       this.setState({
-		showElement: [
-			{show: !this.state.showElement[0].show}
-		]
-       });
-    };
-
+		this.setState({persons: persons,});
+	};
   render() {
-	  let cityDOM = null;
-
-	  if( this.state.showElement[0].show ) {
-		cityDOM = (
+	let persons = null;
+	if(this.state.showPerson) {
+		persons = (
 			<div>
-				<UserOutput
-					road={this.state.country[0].road}
-					city={this.state.country[0].city}/>
-				<UserInput
-					road={this.state.country[0].road}
-					city={this.state.country[0].city}
-					changeRoad={this.switchRoadHandle}
-					changeCity={this.switchCityHandle}/>
-				<button onClick={this.resetCountry}>Reset</button>
+				{this.state.persons.map((person, index) => {
+					return(
+						<Person
+							click={() => this.deletePersonHandler(index)}
+							change={(event) => this.nameChangeHandler(event, person.id)}
+							name={person.name}
+							age={person.age}
+							key={person.id}/>
+					);
+				})}
 			</div>
-        );
-      }
+		);
+	}
+
     return (
       <div className="App">
-          {cityDOM}
-          <button onClick={this.toogleCityHandler}>{this.state.showElement[0].show === true ? 'hidden':  'show'}</button>
+		  {persons}
+		  <button onClick={this.togglePersonHandler}>{this.state.showPerson === false ? 'Show': 'Hidden'}</button>
       </div>
     );
   }
