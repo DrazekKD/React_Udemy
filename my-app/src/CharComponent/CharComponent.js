@@ -9,7 +9,7 @@ const charComponent = (props) =>{
 		margin: '20px auto'
 	};
 
-	return(<p onClick={props.clicked} style={style}>{props.characters}</p>)
+	return(<p onClick={props.clicked} style={style} className={props.classes}>{props.characters}</p>)
 };
 
 export default charComponent;
