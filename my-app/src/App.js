@@ -58,4 +58,4 @@ constructor(props) {
 
 export default App;
 
-//npm run ejecty
+//npm run eject
