@@ -59,3 +59,7 @@ constructor(props) {
 export default App;
 
 //npm run eject
+/*
+* https://allegro.pl/buty-adidas-originals-gazelle-bz0029-r-43-1-3-i7491319182.html?reco_id=4ffb19f2-b264-11e8-8149-246e9677f348&bi_c=Product&bi_m=reco&bi_s=archiwum_allegro&
+* https://allegro.pl/buty-adidas-originals-gazelle-bz0029-r-43-1-3-i7491319182.html?reco_id=4ffb19f2-b264-11e8-8149-246e9677f348&bi_c=Product&bi_m=reco&bi_s=archiwum_allegro&
+* */
