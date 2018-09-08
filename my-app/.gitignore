@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+.ide/workspace.xml
 
 # testing
 /coverage
