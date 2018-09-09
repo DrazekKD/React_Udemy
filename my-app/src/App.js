@@ -8,7 +8,7 @@ class App extends Component {
       persons: [
           {id:'1', name:'Kamil'},
           {id:'2', name:'Julka'},
-          {id:'3', name:'Ola'} ],
+          {id:'3', name:'Ala'} ],
 
       showPersons: true
     };
@@ -43,10 +43,15 @@ class App extends Component {
     const persosns = [
             {id:'1', name:'Kamil'},
             {id:'2', name:'Julka'},
-            {id:'3', name:'Ola'} ];
+            {id:'3', name:'Ala'} ];
     this.setState({persons: persosns});
 
   };
+  showPersons = () => {
+    this.setState({
+        showPersons: !this.state.showPersons
+    });
+  }
   render() {
     let persons = null;
     if(this.state.showPersons) {
@@ -72,6 +77,10 @@ class App extends Component {
           {persons}
           <div>
               <button onClick={this.reset}>Reset</button>
+              <button
+                  onClick={this.showPersons}
+                  className={[this.state.showPersons === true ? classes.hidden: classes.show, classes.btn].join(' ') }>
+                  {this.state.showPersons === true ? 'hidden' : 'show'}</button>
           </div>
       </div>
     );
