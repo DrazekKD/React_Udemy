@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Person from './Person/Person';
-import ErrorBoundary from './ErrorBoundary/ErrorBoundary'
+import Persons from '../components/Persosns/Persons';
+import Cockpit from '../components/Cockpit/Cockpit';
 
 import classes from './App.scss'
 
@@ -40,49 +40,34 @@ class App extends Component {
   };
 
   reset = () => {
-
     const persosns = [
             {id:'1', name:'Kamil'},
             {id:'2', name:'Julka'},
             {id:'3', name:'Ala'} ];
     this.setState({persons: persosns});
-
   };
-  showPersons = () => {
+
+  setShowPersons = () => {
     this.setState({
         showPersons: !this.state.showPersons
     });
-  }
+  };
+
   render() {
     let persons = null;
     if(this.state.showPersons) {
-      persons = (
-          <div>
-              {
-                this.state.persons.map((person, index) => {
-                  return(<ErrorBoundary key={person.id}>
-                      <Person name={person.name}
-                              change={(event) => this.changeNameHandler(event, person.id)}
-                              delete={() => this.deletePersons(index)}/>
-                      </ErrorBoundary>
-                  );
-                })
-              }
-          </div>
-      )
-
-    };
-
+      persons = <Persons
+                persons={this.state.persons}
+                changed={this.changeNameHandler}
+                click={this.deletePersons}/>
+    }
     return (
       <div className={classes.App}>
           {persons}
-          <div>
-              <button onClick={this.reset}>Reset</button>
-              <button
-                  onClick={this.showPersons}
-                  className={[this.state.showPersons === true ? classes.hidden: classes.show, classes.btn].join(' ') }>
-                  {this.state.showPersons === true ? 'hidden' : 'show'}</button>
-          </div>
+          <Cockpit
+              reset={this.reset}
+			  setShowPersons={this.setShowPersons}
+              showPersons={this.state.showPersons}/>
       </div>
     );
   }

@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ed4a93-c370-49a1-861f-1b730b60eb6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/ErrorBoundary/ErrorBoundary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Cockpit/Cockpit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Cockpit/Cockpit.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Persosns/Persons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/containers/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/containers/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/containers/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Persosns/Person/Person.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Person/Person.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Persosns/Person/Person.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/assets/logo.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,38 +80,48 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="1" />
+          <entry key="js" value="5" />
+          <entry key="scss" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="5" />
+          <entry key="SCSS" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="358" />
+          <entry key="js" value="754" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="358" />
+          <entry key="JavaScript" value="754" />
+          <entry key="PLAIN_TEXT" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-app/src/App.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/containers/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="-391">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -113,11 +129,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/ErrorBoundary/ErrorBoundary.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-app/src/components/Cockpit/Cockpit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="23">
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/components/Cockpit/Cockpit.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-app/src/components/Persosns/Persons.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +176,11 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="IdeDocumentHistory">
@@ -158,6 +200,11 @@
         <option value="$PROJECT_DIR$/my-app/src/App.scss" />
         <option value="$PROJECT_DIR$/my-app/src/ErrorBoundary/ErrorBoundary.js" />
         <option value="$PROJECT_DIR$/my-app/src/App.js" />
+        <option value="$PROJECT_DIR$/my-app/src/components/Persosns/Persons.js" />
+        <option value="$PROJECT_DIR$/my-app/src/containers/App.js" />
+        <option value="$PROJECT_DIR$/my-app/src/containers/App.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/components/Cockpit/Cockpit.scss" />
+        <option value="$PROJECT_DIR$/my-app/src/components/Cockpit/Cockpit.js" />
       </list>
     </option>
   </component>
@@ -187,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,11 +253,32 @@
               <item name="my-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="React_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Cockpit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React_Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,6 +287,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\React\React_Udemy\my-app\src\assets" />
+      <recent name="C:\Users\User\Desktop\React\React_Udemy\my-app\src\components\Persosns" />
+      <recent name="C:\Users\User\Desktop\React\React_Udemy\my-app\src\containers" />
+      <recent name="C:\Users\User\Desktop\React\React_Udemy\my-app\src\components" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -245,7 +322,8 @@
       <workItem from="1536399680694" duration="136000" />
       <workItem from="1536409685023" duration="515000" />
       <workItem from="1536410256342" duration="9233000" />
-      <workItem from="1536556422328" duration="2444000" />
+      <workItem from="1536556422328" duration="7454000" />
+      <workItem from="1536571668909" duration="410000" />
     </task>
     <task id="LOCAL-00001" summary="start app">
       <created>1535791473128</created>
@@ -331,11 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536479713537</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Wrror Boundary">
+      <created>1536559966263</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1536559966264</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20920000" />
+    <option name="totallyTimeSpent" value="26340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,10 +435,9 @@
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17910448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Reviews" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -364,16 +448,17 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.6662651" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.34407485" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34407485" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="right" id="News Feed" />
+      <window_info anchor="bottom" id="Reviews" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="3" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="News Feed" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,10 +498,11 @@
     <MESSAGE value="First Task from Udemy" />
     <MESSAGE value="clean app" />
     <MESSAGE value="Person app default" />
-    <option name="LAST_COMMIT_MESSAGE" value="Person app default" />
+    <MESSAGE value="Wrror Boundary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrror Boundary" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my-app/src/App.test.js">
+    <entry file="file://$PROJECT_DIR$/my-app/src/containers/App.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/public/index.html">
@@ -448,9 +534,8 @@
     <entry file="file://$PROJECT_DIR$/my-app/src/index.scss" />
     <entry file="file://$PROJECT_DIR$/my-app/config/webpack.config.dev.js" />
     <entry file="file://$PROJECT_DIR$/my-app/config/webpack.config.prod.js" />
-    <entry file="file://$PROJECT_DIR$/my-app/src/Person/Person.js" />
-    <entry file="file://$PROJECT_DIR$/my-app/src/Person/Person.scss" />
-    <entry file="file://$PROJECT_DIR$/my-app/src/App.scss" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/Persosns/Person/Person.js" />
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/Persosns/Person/Person.scss" />
     <entry file="file://$PROJECT_DIR$/my-app/src/ErrorBoundary/ErrorBoundary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -458,13 +543,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/App.js">
+    <entry file="file://$PROJECT_DIR$/my-app/src/containers/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="-391">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/Persosns/Persons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/containers/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/Cockpit/Cockpit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/Cockpit/Cockpit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
         </state>
       </provider>
     </entry>
