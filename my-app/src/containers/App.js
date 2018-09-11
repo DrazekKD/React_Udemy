@@ -5,14 +5,18 @@ import Cockpit from '../components/Cockpit/Cockpit';
 import classes from './App.scss'
 
 class App extends Component {
-    state = {
-      persons: [
-          {id:'1', name:'Kamil'},
-          {id:'2', name:'Julka'},
-          {id:'3', name:'Ala'} ],
 
-      showPersons: true
-    };
+    constructor(props){
+        super(props);
+        this.state = {
+          persons: [
+              {id:'1', name:'Kamil'},
+              {id:'2', name:'Julka'},
+              {id:'3', name:'Ala'} ],
+
+          showPersons: true
+        };
+    }
 
   changeNameHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex(p => {
