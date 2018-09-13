@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, {Component} from 'react';
 import classes from './Person.scss';
 
@@ -19,5 +20,10 @@ class Person extends Component{
 		)
 	}
 }
+Person.propTypes = {
+	name: PropTypes.string,
+	change: PropTypes.func,
+	delete: PropTypes.func,
+};
 
-export default Person
+export default Person;

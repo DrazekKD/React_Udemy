@@ -14,7 +14,7 @@ class App extends Component {
               {id:'2', name:'Julka'},
               {id:'3', name:'Ala'} ],
 
-          showPersons: true
+          showPersons: false
         };
     }
 
@@ -45,7 +45,7 @@ class App extends Component {
 
   reset = () => {
     const persosns = [
-            {id:'1', name:'Kamil'},
+            {id:1, name:'Kamil'},
             {id:'2', name:'Julka'},
             {id:'3', name:'Ala'} ];
     this.setState({persons: persosns});
@@ -68,6 +68,7 @@ class App extends Component {
     return (
       <div className={classes.App}>
           {persons}
+          <button onClick={()=>{this.setState({showPersons: true})}}>Click</button>
           <Cockpit
               reset={this.reset}
 			  setShowPersons={this.setShowPersons}
@@ -76,5 +77,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
